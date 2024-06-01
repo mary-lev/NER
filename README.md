@@ -6,7 +6,7 @@ This project aims to compare the effectiveness of different Named Entity Recogni
 
 ## Data
 
-The dataset used for this project was created by parsing and cleaning raw text from electronic newsletters sent within the SPbLitGuide (Saint Petersburg Literary Guide) project between 1999 and 2019. These newsletters detailed upcoming cultural events in St. Petersburg, providing a substantial source of information for analyzing the city's literary landscape over two decades.
+The dataset used for this project was created by parsing and cleaning raw text from electronic newsletters sent within [the SPbLitGuide (Saint Petersburg Literary Guide)](https://isvoe.ru/spblitgid/) project between 1999 and 2019. These newsletters detailed upcoming cultural events in St. Petersburg, providing a substantial source of information for analyzing the city's literary landscape over two decades. See the [Streamlit App](https://spblitguide.streamlit.app/) for the principles of word processing and a description of the data model.
 
 - **Dataset Size**: 15,012 records
 - **Attributes**: Event ID, event description, date/time, location, address, and geographic coordinates (latitude/longitude)
