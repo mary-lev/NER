@@ -45,12 +45,21 @@ The evaluation results are summarized in the table below:
 | gpt-4           | 0.99      | 0.69   | 0.81     |
 | gpt-4o          | 0.96      | 0.86   | 0.91     |
 | gpt4o (json)    | 0.96      | 0.90   | 0.93     |
+| gpt-4.1-2025-04-14 | 0.94      | 0.93   | 0.94     |
 
 The evaluation results showed that:
 
-- `gpt4o_json` achieved the highest F1 Score of 0.93, making it the most balanced and accurate model.
+- `gpt-4.1-2025-04-14` achieved the highest F1 Score of 0.94, making it the most balanced and accurate model.
 - `gpt-4` had the highest precision (0.99), suitable for applications where minimizing false positives is critical.
 - `roberta_large` and `spacy` provided balanced performance with high efficiency, making them reliable for general use.
+
+## Statistical Significance
+
+Statistical significance tests were performed between `gpt4o` and `gpt-4.1-2025-04-14`:
+
+- **Precision**: Mean difference = -0.0180, 95% CI = [-0.0272, -0.0099], p-value = 1.0000
+- **Recall**: Mean difference = 0.0702, 95% CI = [0.0438, 0.0971], p-value = 0.0000
+- **F1**: Mean difference = 0.0289, 95% CI = [0.0138, 0.0440], p-value = 0.0000
 
 ## Citation
 
