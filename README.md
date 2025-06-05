@@ -1,8 +1,21 @@
-# Evaluation of Named Entity Recognition Models for Russian News Texts in the Cultural Domain
+# 🎯 NER Models Evaluation for Russian Cultural Texts
 
-## Introduction
+This project provides **comprehensive evaluation and modular implementation** of Named Entity Recognition (NER) models for Russian cultural texts, comparing traditional NER approaches with modern LLM-based methods.
 
-This project aims to compare the effectiveness of different Named Entity Recognition (NER) transformer-based models in processing Russian news texts. The ultimate goal is to determine the most effective strategies for real-world applications in the cultural heritage domain.
+## 🚀 **Quick Start**
+
+### **For NER Model Development:**
+📔 **`NER_Models_Demo.ipynb`** - Interactive demonstration of the modular NER system
+
+### **For Model Evaluation:**
+📊 **`Evaluation_Analysis.ipynb`** - Comprehensive model comparison and analysis
+
+### **For Production Use:**
+🐍 **`model_comparison.py`** - Command-line evaluation script
+
+## 📋 **Project Overview**
+
+This project aims to compare the effectiveness of different Named Entity Recognition (NER) models in processing Russian cultural texts, providing both **live model inference** and **comprehensive evaluation frameworks**.
 
 ## Data
 
@@ -13,18 +26,18 @@ The dataset used for this project was created by parsing and cleaning raw text f
 - **Annotations**: Person names labeled using Doccano text annotation framework
 - **Annotated Sample Size**: 1000 records
 
-## Models
+## 🤖 **Available Models**
 
-The following NER models were evaluated in this study:
+### **🏗️ Modular NER System** (`utils/ner_models/`)
+Interactive model inference with unified interface:
+- **🔤 spaCy**: Russian models (`ru_core_news_sm`, `ru_spacy_ru_updated`)
+- **🤖 OpenAI**: GPT-4o, GPT-4, GPT-3.5-turbo (requires API key)
+- **🧠 DeepPavlov**: BERT-based Russian NER (`ner_collection3_bert`, `ner_ontonotes_bert_mult`)
 
-- `mult_model`: Advanced BERT architecture for deep contextual learning
-- `rus_ner_model`: Rule-based system for precision in controlled linguistic environments
-- `roberta_large`: Optimized for the Russian language
-- `spacy`: Efficient conventional NLP approach, suitable for CPU usage
-- `gpt-3.5`: Advanced transformer-based model by OpenAI
-- `gpt-4`: Enhanced transformer-based model with refined training methodologies
-- `gpt-4o`: Optimized variant of GPT-4 with improved efficiency
-- `gpt4o_json`: Variant of GPT-4o with structured output
+### **📊 Evaluated Models** (pre-computed predictions)
+Traditional and LLM-based approaches compared in evaluation:
+- **Traditional**: `mult_model`, `rus_ner_model`, `roberta_large`, `spacy`
+- **LLM-based**: `gpt-3.5`, `gpt-4`, `gpt-4o`, `gpt4o_json`, `gpt-4.1`, `mistral`
 
 ## Evaluation
 
@@ -32,6 +45,9 @@ The models were evaluated based on their precision, recall, and F1 scores. Token
 
 ## Results
 
+### Performance Overview
+
+![Model Performance Heatmap](performance_heatmap.png)
 
 The evaluation results are summarized in the table below:
 

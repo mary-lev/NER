@@ -1,0 +1,34 @@
+{
+    "gpt4o_vs_gpt-4.1-2025-04-14": {
+        "precision": {
+            "mean_difference": -0.018529992872603204,
+            "confidence_interval": [
+                -0.027572278429863113,
+                -0.01027282515961011
+            ],
+            "p_value": 1.0,
+            "significant": false,
+            "confidence_level": 0.95
+        },
+        "recall": {
+            "mean_difference": 0.07006004611006242,
+            "confidence_interval": [
+                0.04616746471774191,
+                0.09685827274312418
+            ],
+            "p_value": 0.0,
+            "significant": true,
+            "confidence_level": 0.95
+        },
+        "f1": {
+            "mean_difference": 0.02826037827112577,
+            "confidence_interval": [
+                0.01414286577586899,
+                0.04313337073675879
+            ],
+            "p_value": 0.0,
+            "significant": true,
+            "confidence_level": 0.95
+        }
+    }
+}
